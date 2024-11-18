@@ -43,7 +43,7 @@ def get_console_scripts() -> List[str]:
 
 
 extra_require = {
-    "torch": ["torch>=1.13.1"],
+    "torch": ["torch==2.1.2"],
     "torch-npu": ["torch==2.1.0", "torch-npu==2.1.0.post3", "decorator"],
     "metrics": ["nltk", "jieba", "rouge-chinese"],
     "deepspeed": ["deepspeed>=0.10.0,<=0.14.4"],
@@ -62,6 +62,7 @@ extra_require = {
     "modelscope": ["modelscope"],
     "openmind": ["openmind"],
     "dev": ["pre-commit", "ruff", "pytest"],
+    "tensorboardX": ["tensorboardX"],
 }
 
 
